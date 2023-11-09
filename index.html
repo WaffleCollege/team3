@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://3.bp.blogspot.com/-2AkJE-MGLfc/U82zHahLd6I/AAAAAAAAjLI/0zEEK9QOsdM/s150/animal_mark04_neko.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <title>calculate</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+    <span class="material-icons">
+        <a href="home.html">
+        home
+        </a>
+    </span>
+    <div class="inko_age"> 
+  
+        <h2>小型インコの年齢を人間の年齢に換算してみよう！</h2>
+        <label for="numberInputInko">小型インコの年齢を数字で入力してください:</label>
+        <input type="number" id="numberInputInko">
+        <button onclick="multiplyBy5()">計算する</button>
+        <p id="resultInko"></p>
+      
+      
+        <script>
+          function multiplyBy5() {
+              // 入力値を取得
+              let numberInputInko = document.getElementById("numberInputInko");
+              let inputValue = parseFloat(numberInputInko.value);
+      
+              // 数値が有効かどうかをチェック
+              if (!isNaN(inputValue)) {
+                  // 入力値に5を掛けて結果を表示
+                  let result = inputValue  *5 ;
+                  document.getElementById("resultInko").textContent = "人間の年齢で言うと " + result + " 歳です";
+                } else {
+                  // 数値が無効な場合、エラーメッセージを表示
+                  document.getElementById("resultInko").textContent = "数字で入力してください。";
+                }
+            }
+        </script> 
+    </div>
+      
+      
+    <div class="cat_age"> 
+        
+        <h2>猫の年齢を人間の年齢に換算してみよう！</h2>
+        <label for="numberInputCat">猫ちゃんの年齢を数字で入力してください:</label>
+        <input type="number" id="numberInputCat">
+        <button onclick="multiplyBy4()">計算する</button>
+        <p id="resultCat"></p>
+      
+        <script>
+          function multiplyBy4() {
+              // 入力値を取得
+              let numberInputCat = document.getElementById("numberInputCat");
+              let inputValue = parseFloat(numberInputCat.value);
+      
+              // 数値が有効かどうかをチェック
+              if (!isNaN(inputValue)) {
+                  // 入力値に4を掛けて結果を表示
+                  let result = (inputValue - 1) * 4 + 20;
+                  document.getElementById("resultCat").textContent = "人間の年齢で言うと " + result + " 歳です";
+                } else {
+                  // 数値が無効な場合、エラーメッセージを表示
+                  document.getElementById("resultCat").textContent = "数字で入力してください。";
+                }
+            }
+        </script>
+      </div>
+</body>
+
+</html>

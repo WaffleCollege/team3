@@ -30,3 +30,18 @@
       }
     });
   }());
+
+  $(function() {
+    $('.nav-link').hover(
+      function(){
+      $('.nav-link').css('border','16px solid #00c9e8');
+        $('.nav-link').css('transition','0.5s');
+      $('.nav-link').css('color','#FCF16E');
+        $('.nav-link').css('transition','0.5s');
+      },
+      function(){
+      $('.nav-link').css('border','16px solid #FFFFFF');
+      $('.nav-link').css('color','#FFFFFF');
+    }
+   );
+   });

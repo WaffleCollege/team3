@@ -6,7 +6,10 @@
   <title>home</title>
   <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
   <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
-
+  <link rel="icon" href="https://3.bp.blogspot.com/-2AkJE-MGLfc/U82zHahLd6I/AAAAAAAAjLI/0zEEK9QOsdM/s150/animal_mark04_neko.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" クロスオリジン>
+  <link href="https: //fonts.googleapis.com/css2? family= Edu+TAS+初心者& display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0; padding: 0;
@@ -17,6 +20,7 @@
       height: 100%;
       overflow: hidden;
     }
+    
 
     #container {
       overflow: hidden;
@@ -110,12 +114,21 @@
     }
 
     .nav-link {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 20px;
+      font-family: 'Edu TAS Beginner', cursive;
     }
+
+    .nav-link:hover {
+      color: yellow;
+      font-weight: bold;
+      font-family: 'Edu TAS Beginner', cursive;
+    }
+
   </style>
 </head>
+
 <body>
   <div id="container">
     <video id="background_video" loop muted>
@@ -125,25 +138,13 @@
     <div id="overlay"></div>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="kitaha.html"> ホーム</a>
+        <a class="nav-link" href="home.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cat.html">ネコ</a>
+        <a class="nav-link" href="animals.html">Animals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="fox.html">キツネ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="inko.html">インコ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="redpanda.html">レッサーパンダ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="wolf.html">オオカミ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">おまけ</a>
+        <a class="nav-link" href="index.html">Extra</a>
       </li>
     </ul>
     <section id="main_content">
@@ -153,6 +154,7 @@
         </div>
     </section>
   </div>
+
   <script src="bideo.js"></script>
   <script src="main.js"></script>
   <script>
@@ -160,5 +162,6 @@
       window.location.protocol = "https";
     }
   </script>
+  
 </body>
 </html>
